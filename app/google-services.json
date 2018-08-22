@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "730115014455",
+    "firebase_url": "https://pcsirsap.firebaseio.com",
+    "project_id": "pcsirsap",
+    "storage_bucket": "pcsirsap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730115014455:android:13c62334b6ca940f",
+        "android_client_info": {
+          "package_name": "com.example.shubhankar.pcs_irsap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730115014455-idcbomgolf0p2teteq1t7g720lsvevcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shubhankar.pcs_irsap",
+            "certificate_hash": "40ec6d01e2dd088708e588d569eb50d98f4c8132"
+          }
+        },
+        {
+          "client_id": "730115014455-sksrg3n1g5orsi95mcrrrnei1750umuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDy5gQfL3_qjACA6au7NOWnCGUG2SF53s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730115014455-sksrg3n1g5orsi95mcrrrnei1750umuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

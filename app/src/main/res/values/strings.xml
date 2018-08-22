@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PCS-IR(Sap)</string>
+
+    <string-array name="chartType">
+        <item>Confirmed</item>
+        <item>Waitlist</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
