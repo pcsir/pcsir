@@ -33,7 +33,7 @@ public class ChartsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Charts");
+        getSupportActionBar().setTitle("Hi");
 
         spinner = findViewById(R.id.spinner);
 
