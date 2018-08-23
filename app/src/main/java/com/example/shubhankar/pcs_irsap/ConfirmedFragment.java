@@ -21,7 +21,7 @@ public class ConfirmedFragment extends Fragment {
 
     View view;
     DatabaseHelper databaseHelper=DatabaseHelper.getDatabaseHelperInstance();
-    ArrayList personNames;
+    ArrayList personNames,sap;
     RecyclerView recyclerView;
     ConfirmedListAdapter confirmedListAdapter;
     LinearLayoutManager linearLayoutManager;
