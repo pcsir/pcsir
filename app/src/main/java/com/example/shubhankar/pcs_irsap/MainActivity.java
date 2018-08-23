@@ -1,7 +1,6 @@
 package com.example.shubhankar.pcs_irsap;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,14 +20,13 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String email,password;
     EditText emailView,passwordView;
-    DatabaseHelper databaseHelper;
-    SQLiteDatabase myDb;
+    private static MainActivity inst;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         emailView=findViewById(R.id.email);
         passwordView=findViewById(R.id.password);
@@ -45,6 +43,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+    static boolean active = false;
+    @Override
+    public void onStart() {
+        super.onStart();
+        active = true;
+        inst = this;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        active = false;
+    }
+
+
+    public static MainActivity instance() {
+        return inst;
     }
 
 

@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class ChartsActivity extends AppCompatActivity {
 
-    boolean status = false;
+
     Toolbar toolbar;
     Spinner spinner;
     ConfirmedFragment confirmedFragment;
