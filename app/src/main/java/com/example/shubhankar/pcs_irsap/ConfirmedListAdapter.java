@@ -17,7 +17,7 @@ import java.util.List;
 public class ConfirmedListAdapter extends RecyclerView.Adapter<SetViewHolder>{
 
     private Activity activity;
-    List<Item> items = Collections.emptyList();
+    List<Item> items;
 
     public ConfirmedListAdapter(Activity activity, List<Item> items){
         this.activity=activity;

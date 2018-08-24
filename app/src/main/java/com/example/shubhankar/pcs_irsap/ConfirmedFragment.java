@@ -39,8 +39,8 @@ public class ConfirmedFragment extends Fragment {
     public void loadDatabase(){
         databaseHelper = new DatabaseHelper(getActivity());
         try {
-            databaseHelper.checkAndCopyDatabse();
-            databaseHelper.openDatabse();
+            databaseHelper.checkAndCopyDatabase();
+            databaseHelper.openDatabase();
         }catch (SQLiteException e){
             e.printStackTrace();
         }

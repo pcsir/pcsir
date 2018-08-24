@@ -35,8 +35,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public void checkAndCopyDatabse(){
-        boolean dbExists=checkDatabse();
+    public void checkAndCopyDatabase(){
+        boolean dbExists=checkDatabase();
         if(dbExists){
             Log.d("dd","database already exists");
         }
@@ -52,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public boolean checkDatabse(){
+    public boolean checkDatabase(){
         SQLiteDatabase checkDB = null;
         try {
             String myPath = DB_PATH + DB_NAME;
@@ -81,10 +81,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         inputStream.close();
     }
 
-    public void openDatabse(){
+    public void openDatabase(){
         String my_path = DB_PATH+DB_NAME;
         sqLiteDatabase = SQLiteDatabase.openDatabase(my_path,null,SQLiteDatabase.OPEN_READWRITE);
-
+        Log.d("abc","Database opened");
     }
 
     public synchronized void close(){
